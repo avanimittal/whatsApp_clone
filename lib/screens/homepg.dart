@@ -9,14 +9,23 @@ class WhatsApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return MaterialApp(
+     theme: ThemeData(
+       primaryColor: Color(0xFF075E54),
+       primaryColorDark: Color(0xff128C7E),
+       accentColor: Color(0xFF25D366)
+     ),
      debugShowCheckedModeBanner: false,
      title: 'WhatsApp',
      home:DefaultTabController(
        length:4,
        child: Scaffold(
+         floatingActionButton: FloatingActionButton(
+           child: Icon(Icons.message,color: Colors.white,),
+           onPressed: (){},
+
+         ),
          appBar: AppBar(
            title: Text('WhatsApp',style: TextStyle(fontSize: 22.0),),
-           backgroundColor: Color(0xFF075E54),
            actions: <Widget>[
              IconButton(icon:Icon(Icons.search),color:Colors.white,onPressed: (){},),
              Padding(padding: EdgeInsets.all(2.0)),
