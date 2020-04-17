@@ -24,7 +24,6 @@ class _StatusPageState extends State<StatefulWidget>{
               Padding(
                 padding: EdgeInsets.all(7.0),
                 child:Container(
-//                  color: Color(0xff128C7E),
                   height: 62.0,
                   width:62.0,
                   decoration: BoxDecoration(
@@ -114,17 +113,13 @@ class _StatusPageState extends State<StatefulWidget>{
                           image:NetworkImage('https://www.theportlandclinic.com/wp-content/uploads/2019/07/Person-Curtis_4x5-e1564616444404.jpg'))),
                     ),
                     Positioned(
-//                    top: 24.0,
-//                    left: 40.0,
                       bottom: 1.0,
                       right: 0.0,
                       child:Container(
                         height: 20.0,
                         width: 20.0,
-//padding:EdgeInsets.all(1.0),
                         child:Padding(child:Icon(Icons.add,color:Colors.white),
                           padding: EdgeInsets.all(0.2),),
-//                    child:Center(child:Text('+',style:TextStyle(fontSize: 25.0,color: Colors.white)),),
                         decoration: BoxDecoration(
                             boxShadow:[BoxShadow(
                                 color: Colors.grey,
