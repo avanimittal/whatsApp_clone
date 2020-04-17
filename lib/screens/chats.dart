@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ChatPage extends StatefulWidget{
@@ -37,6 +38,7 @@ Widget _contactsList(BuildContext context, int index){
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: ListView.builder(
+          padding: EdgeInsets.all(0.0),
           itemBuilder:_contactsList,
           itemCount:15,
         ),

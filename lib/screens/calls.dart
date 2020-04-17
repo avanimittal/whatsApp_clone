@@ -6,7 +6,11 @@ class CallsPage extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: Scaffold(
+        body: Center(
+          child: Icon(Icons.add_call,size: 150.0,color: Colors.blueGrey[50],),
+        ),
+      ),
     );
   }
 }
